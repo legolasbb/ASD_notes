@@ -67,7 +67,6 @@
 ***
 Kopiec - drzewo binarne, w którym zawartość kazdego z węzłów jest większa lub równa zawratości węzłów w jego poddrzewach.
 
-wkleic zdjeci
 ![image info](https://www.tutorialspoint.com/data_structures_algorithms/images/min_heap_example.jpg)
 
 

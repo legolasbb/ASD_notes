@@ -17,7 +17,8 @@
 - Posortuj osobno lewą i prawą część tablicy 
 - Scal w posortowaną
 ```python
-    # A i B - dwie połówki do scalenia
+    # A - główna tablica, którą sortujemy (w niej są obie połówki)
+    # B - tablica pomocnicza do zapisywania posortowanych elementów
     # p - miejsce gdzie zaczyna sie fragment posortowany
     # q - początek drugiej połowki (i koniec pierwszej)
     # r - koniec drugiej połowki

@@ -81,6 +81,56 @@ Sortujemy kolejno po cyfrach/znakach porównując od najmniej do najbardziej zna
 Najczęściej uzywane do sortowania ciagów znaków
 Mozna równiez posortować liczby z przedziały 0, ..., n-1 w czasie $O(n \log n)$
 
+Implementacja dla ciagow malych liter alfabetu angielskiego (a-z)
+
+```python
+
+    
+
+    # counting sort jak wyzej, zmodyfikowany dla stringow
+    def counting_sort(A, ind):
+        def char_idx(el):
+            if len(el) <= ind:
+                idx = 0
+            else:
+                idx = ord(el[ind]) - ord('a') + 1
+            
+            return idx
+        n = len(A)
+        # Alfabet angielski ma 26 liter, jeden dodakowy gdy brak znaku
+        count = [0] * 27
+        output = [""] * n
+
+        for el in A:
+            idx = char_idx(el)
+            count[char_idx]+=1
+        
+        for i in range(1, 27):
+            count[i]+=count[i-1]:
+
+        for i in range(n-1, -1, -1):
+            idx = char_idx(el)
+            count[idx]-=1
+            output[count[idx]] = A[i]
+        
+        for i in range(n):
+            A[i] = output[i]
+
+        
+    
+    def radix_sort(A):
+        # Znajdujemy najwiekszą liczbe, aby znac ilość cyfr
+        m = len(max(A, key=len))
+
+        for i in range(m-1, -1, -1):
+            # Sortujemy po kolei po kazdym znaku
+            counting_sort(A, i)
+
+
+
+
+```
+
 ## Bucket sort / Sortowanie kubelkowe
 ***
 Sortujemy liczby z przedziału [0, 1) wygenerowane losowo, z rozkładu jednostajnego
@@ -88,9 +138,20 @@ n - liczb
 kubełki - [0, 1/n), [1/n, 2/n), ..., [n-1/n, 1)
 Rozdzielamy liczby do kubełków, do których przynalezą 
 
+Implementacja w rozwiązaniu zadania ponizej
+
 ***
 **Zadanie**: Znaleźć takie duze liczby A[i], A[j], ze po posortowaniu były by obok siebie, 
 ale |A[i] - A[j]| jest maksymalna.
+
+**Rozwiązanie**: Tworzymy n+1 równych kubełkow, pierwszy zaczynający się od minimalnej wartości w tablicy, 
+a ostatni kończący się na największej wartości w tablicy. Mamy n liczb i n+1 kubełkow więc z ZSD wiemy, 
+ze co najmniej jeden kubełek będzie pusty. W dodatku wiemy, ze pustym kubelkiem nie bedzie zaden z skrajnych.
+Stąd wiemy, ze istnieja co najmniej dwie liczby miedzy, którymi odległość bedzie długości co najmniej jednego kubełka,
+więc dwie liczby wewnątrz kubełka nie mogą tworzyć najwiekszej róznicy. Teraz starczy,
+ze bedziemy porownywac najmniejsza i najwieksza wartosc z sasiednich kubelkow (pomijajac puste).
+
+Kod [tutaj](solved/bucket.py)
 
 ## Statystyki pozycyjne
 ***

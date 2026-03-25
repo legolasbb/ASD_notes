@@ -1,5 +1,5 @@
 '''
-Znaleźć takie duze liczby A[i], A[j], ze po posortowaniu były by obok siebie, 
+Znaleźć takie liczby A[i], A[j], ze po posortowaniu były by obok siebie, 
 ale |A[i] - A[j]| jest maksymalna.
 '''
 
@@ -17,7 +17,7 @@ def divide(tab):
         if el ==max_val:
             ind = n
         else:
-            ind = (el - min)//bucket_size
+            ind = (el - min_val)//bucket_size
 
         buckets_max[ind] = max(buckets_max[ind], el)
         buckets_min[ind] = min(buckets_min[ind], el)

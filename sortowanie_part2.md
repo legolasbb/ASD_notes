@@ -1,7 +1,5 @@
 # Sortowanie cz. 2 (Wykład 3, 18.03)
 
-TBD - implementacje i uzupełnienie ostatnich algorytmów
-
 ## Quick Sort
 ***
 
@@ -17,7 +15,7 @@ Dzielnie tablicy, a nastepnie sortowanie podzielonych części
                 i += 1
                 swap(A[i], A[j])
 
-        # Po wykonaniu petli - [   | <=x | >x | x ]
+        # Po wykonaniu petli - [   | <=x | x | >x   ]
         # Zwracamy indeks, pod którym znajduje się x
         return i
 

@@ -1,4 +1,5 @@
 # Sortowanie i abstrakcyjne struktury danych (Wykład 4, 25.03)
+TBD - add sources and fix last picture
 ***
 ## Magiczne 5-ki 
 Wybór k-tego elementu co do wielkości (k-ta statystyka pozycyjna) w czasie $O(n)$

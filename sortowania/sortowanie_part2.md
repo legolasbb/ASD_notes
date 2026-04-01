@@ -149,7 +149,7 @@ Stąd wiemy, ze istnieja co najmniej dwie liczby miedzy, którymi odległość b
 więc dwie liczby wewnątrz kubełka nie mogą tworzyć najwiekszej róznicy. Teraz starczy,
 ze bedziemy porownywac najmniejsza i najwieksza wartosc z sasiednich kubelkow (pomijajac puste).
 
-Kod [tutaj](solved/bucket.py)
+Kod [tutaj](../solved/bucket.py)
 
 ## Statystyki pozycyjne
 ***

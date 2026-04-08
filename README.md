@@ -8,3 +8,4 @@ Lecture notes from algorithms and data structures class (in polish).
     3. [Sortowanie cz.3 i abstrakcyjne struktury danych](sortowania/sortowanie_part3.md)
 - Rozdział drugi (Grafy)
     1. [Reprezentacja i przeszukiwanie grafu](grafy/algo_grafowe.md)
+    2. [Wykorzystanie DFS](grafy/grafy_part2.md) 

@@ -66,9 +66,3 @@ W tab[i] mamy liste wierzcholkow, do których wychodzi krawędz z i-tego wierzch
                     visited[u]=True
         
 ```
-# Sortowanie topologiczne
-***
-DAG - Direct Acyclic Graph<br>
-Sortowane topologiczne - ułożenie wierzchołkow tak, aby wszystkie krawędzie były skierowane
-od lewej do prawej.<br>
-Algorytm opiera się na DFS zapisująć wierzchołki w kolejności ich odwiedzenia.

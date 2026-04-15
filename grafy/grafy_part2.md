@@ -50,5 +50,5 @@ jeśli istnieje ścieżka skierowana z u do v oraz ścieżka skierowana z v do u
 Most jest krawędzia, której usunięcie rospójnia graf.<br>
 **Algorytm znajdywania mostów**
 - Wykonaj DFS zapisując czasy odwiedzenia wierzchołków
-- Dla każdego wierzchołka oblicz ***low(v)=min( d(v), min{ low(u) | u jest osiągalny krawędzią wsteczną z v }, min{ d(w) | w jest dzieckiem v w drzewie DFS})***
+- Dla każdego wierzchołka oblicz ***low(v)=min( d(v), min{ d(u) | u jest osiągalny krawędzią wsteczną z v }, min{ low(w) | w jest dzieckiem v w drzewie DFS})***
 - Krawędź {parent(v), v} jest mostem gdy low(v)=d(v) 

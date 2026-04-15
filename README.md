@@ -9,3 +9,4 @@ Lecture notes from algorithms and data structures class (in polish).
 - Rozdział drugi (Grafy)
     1. [Reprezentacja i przeszukiwanie grafu](grafy/algo_grafowe.md)
     2. [Wykorzystanie DFS](grafy/grafy_part2.md) 
+    3. [Grafy ważone i najkrótsza ścieżka](grafy/grafy_wazone.md)

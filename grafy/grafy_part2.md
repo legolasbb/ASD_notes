@@ -46,6 +46,7 @@ jeśli istnieje ścieżka skierowana z u do v oraz ścieżka skierowana z v do u
 - Uruchom DFS zapisując czasy przetworzenia
 - Odwróć kierunek wszystkich krawędzi 
 - Wykonaj DFS ponownie w kolejności malejących czasów przetworzenia
+<br>**Implementacja [tutaj](implementations/scc.py)** 
 ##  Mosty w grafach
 Most jest krawędzia, której usunięcie rospójnia graf.<br>
 **Algorytm znajdywania mostów**

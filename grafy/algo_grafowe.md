@@ -23,7 +23,7 @@ W tab[i] mamy liste wierzcholkow, do których wychodzi krawędz z i-tego wierzch
 ***
 ![image info](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breadth-First-Search-Algorithm.gif?_=20100504223639)
 ```python
-    def BFS(G: List, start: int)->None:
+    def BFS(G: List, s: int)->None:
         n = len(G)
         next  = deque()
         visited = [False]*n
@@ -36,7 +36,7 @@ W tab[i] mamy liste wierzcholkow, do których wychodzi krawędz z i-tego wierzch
             v = next.popleft()
             # Wyswietlamy wierzcholki, które odwiedzamy
             print(v)
-            for u in G[v];
+            for u in G[v]:
                 if not visited[u]:
                     # Dodaje wierzchołek na prawa strone kolejki
                     next.append(u)
@@ -47,7 +47,7 @@ W tab[i] mamy liste wierzcholkow, do których wychodzi krawędz z i-tego wierzch
 ***
 ![image info](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif?_=20090326120256)
 ```python
-    def DFS(G: list, start: int)->None:
+    def DFS(G: list, s: int)->None:
         n = len(G)
         next = deque()
         visited = [False]*n

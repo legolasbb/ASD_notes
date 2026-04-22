@@ -38,6 +38,7 @@ u = wierzchołek wyciągniety z kolejki, dla kazdej krawedzi (u, v) wykonaj:
 <br>
 **W implementacji należy pominąć dodawanie wszyskich wierzchołków do kolejki w kroku 1.**<br>
 **W dodatku do $v.d = u.d + w(u, v)$ dodajemy ten wierzchołek podwownie z zmniejszoną wartością**
+**Implementacja [tutaj](implementations/dijkstra.py)** 
 ## Algorytm Bellmana-Forda
 #### (Dopuszcza wagi ujemne)
 ***

@@ -53,3 +53,4 @@ Most jest krawędzia, której usunięcie rospójnia graf.<br>
 - Wykonaj DFS zapisując czasy odwiedzenia wierzchołków
 - Dla każdego wierzchołka oblicz ***low(v)=min( d(v), min{ d(u) | u jest osiągalny krawędzią wsteczną z v }, min{ low(w) | w jest dzieckiem v w drzewie DFS})***
 - Krawędź {parent(v), v} jest mostem gdy low(v)=d(v) 
+<br>**Implementacja [tutaj](implementations/bridges.py)**

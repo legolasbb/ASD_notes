@@ -2,12 +2,16 @@
 
 ## Reprezentacja grafu
 ***
+*Uwaga: mowa tu o grafie skierowanym, jakby graf był nieskierowany to krawędzie są wszędzie w obydwie strony* \
+\
 ![image info](https://www.flynerd.pl/wp-content/uploads/2018/10/graf-skierowany-4-wierzcholki.png)<br>
 (Reprezentacje dla grafu powyzej)
 ### 1. Lista krawedzi
 [(1, 2), (1, 3), (1, 4), (2, 4), (3, 4)]
 ### 2. Reprezetacja macierzowa
-Tablica n x n gdzie n to liczba wierzchołków. Jesli miedzy wierzchołkiem v i w jest krawedź to tab[v][w] = True
+Tablica n x n gdzie n to liczba wierzchołków. Jesli z wierzchołka v do w jest krawedź to tab[v][w] = True
+<img width="465" height="435" alt="image" src="https://github.com/user-attachments/assets/7438a08b-fdee-45ab-8ca5-66ca1edff908" />
+
 ### 3. Listy sąsiadów
 W tab[i] mamy liste wierzcholkow, do których wychodzi krawędz z i-tego wierzchołka
 
@@ -23,7 +27,7 @@ W tab[i] mamy liste wierzcholkow, do których wychodzi krawędz z i-tego wierzch
 ***
 ![image info](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breadth-First-Search-Algorithm.gif?_=20100504223639)
 ```python
-    def BFS(G: List, s: int)->None:
+    def BFS(G: List, s: int)->None: # s to wierzcholek startowy
         n = len(G)
         next  = deque()
         visited = [False]*n
@@ -47,7 +51,7 @@ W tab[i] mamy liste wierzcholkow, do których wychodzi krawędz z i-tego wierzch
 ***
 ![image info](https://upload.wikimedia.org/wikipedia/commons/7/7f/Depth-First-Search.gif?_=20090326120256)
 ```python
-    def DFS(G: list, s: int)->None:
+    def DFS(G: list, s: int)->None: # s to wierzcholek startowy
         n = len(G)
         next = deque()
         visited = [False]*n

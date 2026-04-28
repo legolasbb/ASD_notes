@@ -27,7 +27,7 @@ W tab[i] mamy liste wierzcholkow, do których wychodzi krawędz z i-tego wierzch
 ***
 ![image info](https://upload.wikimedia.org/wikipedia/commons/5/5d/Breadth-First-Search-Algorithm.gif?_=20100504223639)
 ```python
-    def BFS(G: List, s: int)->None: # s to wierzcholek startowy
+    def BFS(G: list, s: int)->None: # s to wierzcholek startowy
         n = len(G)
         next  = deque()
         visited = [False]*n

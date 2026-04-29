@@ -10,3 +10,6 @@ Lecture notes from algorithms and data structures class (in polish).
     1. [Reprezentacja i przeszukiwanie grafu](grafy/algo_grafowe.md)
     2. [Wykorzystanie DFS](grafy/grafy_part2.md) 
     3. [Grafy ważone i najkrótsza ścieżka](grafy/grafy_wazone.md)
+    4. [Uzupełnienie grafów](grafy/grafy_part4.md)
+- Rozdział trzeci (dynamiczne i zachłanne)
+    1. [Kontruowanie rozwiązań](dynamiki_zachłanne/dyn_part1.md)

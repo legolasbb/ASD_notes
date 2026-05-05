@@ -29,8 +29,9 @@ f(k) - długość najdłuższego podciągu kończącego się na A[k]<br>
 złe: g(k) = długość najdłuższego podciągu dla A[0], ..., A[k]<br>
 
 II. Wyznaczanie wzoru rekurencyjnego na f<br>
-$f(k) = max\{ 1+ f(i) | i<k \wedge A[i] < A[k]\}$
-
+```math
+f(k) = \max \{ 1 + f(i) \mid i < k \land A[i] < A[k] \}
+```
 III. 
 ```python
 def lis(A):

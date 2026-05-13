@@ -13,3 +13,5 @@ Lecture notes from algorithms and data structures class (in polish).
     4. [Uzupełnienie grafów](grafy/grafy_part4.md)
 - Rozdział trzeci (dynamiczne i zachłanne)
     1. [Konstruowanie rozwiązań](dynamiki_zachłanne/dyn_part1.md)
+    2. [Przykładowe dynaczmiczne](dynamiki_zachłanne/dyn_part2.md)
+    3. [Algorytmy zachłanne](dynamiki_zachłanne/zachlanne_part1.md)

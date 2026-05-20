@@ -46,11 +46,25 @@ T - jakieś drzewo<br>
 a, b - dwa symbole najdalej od korzenia<br>
 x, y 0 dwa najrzadsze symbole<br>
 $T'$ zamienia symbole x i a<br><br>
-$B(T') = B(T) - f(a)*d_t(a) + f(a) * d_t(x) - f(x) * d_t(x) + f(x) * d_t(a)$<br>
-$B(T') = B(T) - f(a)(d_t(x) - d_t(a)) - f(x)(d_t(x) - d_t(a))$<br><br>
-$B(T') = B(T) + (d_t(x) - d_t(a))*(f(a) - f(x)) \le B(T)$<br>
-$d_t(x) - d_t(a) \le 0$<br>
-$f(a) - f(x) \ge 0$
+```math
+B(T') = B(T) - f(a)*d_t(a) + f(a) * d_t(x) - f(x) * d_t(x) + f(x) * d_t(a)
+```
+
+```math
+B(T') = B(T) - f(a)(d_t(x) - d_t(a)) - f(x)(d_t(x) - d_t(a)
+```
+
+```math
+B(T') = B(T) + (d_t(x) - d_t(a))*(f(a) - f(x)) \le B(T)
+```
+
+```math
+d_t(x) - d_t(a) \le 0 \newline
+```
+
+```math
+f(a) - f(x) \ge 0
+```
 ***
 Optymalna podstruktura - po rozwiązaniu pierwszego kroku mamy
 do rozwiązania taki sam rodzaj problemu, ale mniejszy
